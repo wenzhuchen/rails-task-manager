@@ -1,0 +1,5 @@
+<p>Task name : <%= @task.name %></p>
+<p>DONE: <%= @task.done == 1 ? "yes" : "no" %></p>
+<%= link_to "update", edit_task_path %>
+<%= link_to "back to list", tasks_path %>
+<p>--------------------</p>

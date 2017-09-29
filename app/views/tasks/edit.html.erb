@@ -1,0 +1,9 @@
+<h1>Update task</h1>
+<%= form_for(@task) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <p>Mark as done: (1 = done 0 = not done)</p>
+  <%= f.text_field :done %>
+  <%= f.submit %>
+<% end %>
